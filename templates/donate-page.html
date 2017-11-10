@@ -1,0 +1,65 @@
+{%extends 'layout_now.html'%}
+{%block body%}
+<div class="login-page">
+    <div class="page-header" filter-color="orange">
+        <div class="page-header-image" style="background-image:url(../static/assets_now/img/login.jpg)"></div>
+        <div class="container">
+            <div class="col-md-4 content-center">
+                <div class="card card-login card-plain">
+                    <form class="form" method="POST" action="/donate">
+                        <div class="content">
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons location_pin"></i>
+                                </span>
+                                <input name="address" type="text" class="form-control" placeholder="PickUp Address...">
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons travel_info"></i>
+                                </span>
+                                <input name="pin" type="text" class="form-control" placeholder="PIN...">
+                            </div>
+                           <!--  <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons tech_watch-time"></i>
+                                </span>
+                    
+                                <select id="listBox" onchange='selct_district(this.value)'></select>
+                                <select id='secondlist'></select>
+    
+                            </div> -->
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons business_chart-bar-32"></i>
+                                </span>
+                                <input name="city" type="text" class="form-control" placeholder="City...">
+                            </div>
+                             <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons location_world"></i>
+                                </span>
+                                <input  name="state" type="text" class="form-control" placeholder="State...">
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons tech_watch-time"></i>
+                                </span>
+                                <input  name="time" type="text" class="form-control" placeholder="PickUp Time...">
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            <button class="btn btn-primary btn-round btn-lg btn-block">Lets Go</button>
+                        </div>
+                        <div class="pull-right">
+                            <h6>
+                                <a href="#" class="link">Need Help?</a>
+                            </h6>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div></div>
+</div>
+{%endblock%}

@@ -1,0 +1,32 @@
+{%extends 'layout_now.html'%}
+{%block body%}
+<div class="profile-page">
+    <div class="wrapper">
+        <div class="page-header page-header-small" filter-color="orange">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('../static/assets_now/img/bg5.jpg');">
+            </div>
+            <div class="container">
+                <div class="content-center">
+                    <div class="photo-container">
+                        <img src="../static/assets_now/img/ryan.jpg" alt="">
+                    </div>
+                    <h3 class="title">{{name}}</h3>
+                    <div class="content">
+                        <div class="social-description">
+                            <h2>{{donation}}</h2>
+                            <p>Donations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h3 class="title">About me</h3>
+                <h5 class="description">{{aboutme}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
